@@ -6,9 +6,9 @@ pipeline {
         stage('Setup Python Environment') {
             steps {
                 bat '''
-                python --version
+                "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" --version
 
-                python -m venv venv
+                "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m venv venv
 
                 call venv\\Scripts\\activate
 
