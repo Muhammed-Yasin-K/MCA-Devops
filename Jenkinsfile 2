@@ -30,7 +30,9 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat 'npm start'
+                // run node app in background
+                bat 'start "" /B npm start'
+                bat 'echo Deployment Completed'
             }
         }
     }
